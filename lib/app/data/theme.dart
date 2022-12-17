@@ -29,5 +29,8 @@ class AppTheme {
         fontSize: 25.0,
       )
     ),
+    iconTheme: const IconThemeData(
+      color: Colors.white
+    ),
   );
 }

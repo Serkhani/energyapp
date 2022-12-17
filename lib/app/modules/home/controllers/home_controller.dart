@@ -1,4 +1,5 @@
 import 'package:energy/app/data/user.dart';
+import 'package:energy/app/routes/app_pages.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController {
@@ -10,6 +11,7 @@ class HomeController extends GetxController {
         img: 'assets/profile.png',
         energyUsed2day: 26.8,
         energyUsedInMonth: 325.37,
+        email: 'judeman@gmail.com',
         lastRecharge: 2);
     super.onInit();
   }
@@ -23,5 +25,9 @@ class HomeController extends GetxController {
   void onClose() {
     super.onClose();
   }
-  void topUp(){}
+
+  void topUp() {
+    print('topup');
+    Get.toNamed(Routes.TOP_UP);
+  }
 }

@@ -1,9 +1,9 @@
 import 'package:get/get.dart';
 
 class TopUpController extends GetxController {
-  //TODO: Implement TopUpController
+    RxDouble exchangeRate = 1.50.obs;
 
-  final count = 0.obs;
+
   @override
   void onInit() {
     super.onInit();
@@ -19,5 +19,4 @@ class TopUpController extends GetxController {
     super.onClose();
   }
 
-  void increment() => count.value++;
 }

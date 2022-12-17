@@ -7,10 +7,6 @@ class SignInSectionView extends GetView {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('SigninSectionView'),
-        centerTitle: true,
-      ),
       body: Text('SignIn')
     );
   }

@@ -1,3 +1,4 @@
+import 'package:energy/app/routes/app_pages.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
@@ -21,10 +22,18 @@ class SignInController extends GetxController {
 
   @override
   void onClose() {
+    phoneNumTxtCon.dispose();
+    addressTxtCon.dispose();
+    nameTxtCon.dispose();
     super.onClose();
   }
 
-  void createOne(){}
+  void createOne() {
+    print('create');
+  }
 
-  void signIn(){}
+  void signIn() {
+    print('Sign In');
+    Get.offNamed(Routes.HOME);
+  }
 }

@@ -25,4 +25,6 @@ class SignInController extends GetxController {
   }
 
   void createOne(){}
+
+  void signIn(){}
 }

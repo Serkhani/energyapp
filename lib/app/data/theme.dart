@@ -23,7 +23,11 @@ class AppTheme {
         color: Color(0xff00008b),
         fontSize: 20.0,
         fontWeight: FontWeight.bold
+      ),
+      displayLarge: const TextStyle(
+        color: Colors.white,
+        fontSize: 25.0,
       )
-    )
+    ),
   );
 }

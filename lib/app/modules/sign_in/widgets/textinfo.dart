@@ -18,6 +18,7 @@ class TextInfo extends StatelessWidget {
           TextField(
             controller: controller,
             decoration: InputDecoration(
+              constraints: const BoxConstraints(maxHeight: 50.0),
               fillColor: Colors.indigo.withOpacity(0.4),
               filled: true,
               border: OutlineInputBorder(

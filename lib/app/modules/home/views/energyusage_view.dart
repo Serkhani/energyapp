@@ -17,14 +17,21 @@ class EnergyUsageView extends GetView<HomeController> {
                 Container(
                   padding: const EdgeInsets.all(3.0),
                   decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.blue
+                      shape: BoxShape.circle, color: Colors.blue),
+                  child: const Icon(
+                    Icons.lightbulb,
+                    color: Colors.white,
                   ),
-                  child: const Icon(Icons.lightbulb, color: Colors.white,),),
-                 Padding(
-                  padding:const EdgeInsets.only(left: 16.0),
-                  child: Text('Energy Usage', 
-                  style: Theme.of(context).textTheme.displayMedium!.copyWith(color: Colors.black),),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 16.0),
+                  child: Text(
+                    'Energy Usage',
+                    style: Theme.of(context)
+                        .textTheme
+                        .displayMedium!
+                        .copyWith(color: Colors.black),
+                  ),
                 )
               ],
             ),
@@ -39,26 +46,31 @@ class EnergyUsageView extends GetView<HomeController> {
               children: [
                 Row(
                   children: [
-                    const Icon(Icons.calendar_today_rounded, color: Colors.green,),
-                    Text.rich(
-                      TextSpan(
+                    const Icon(
+                      Icons.calendar_today_rounded,
+                      color: Colors.green,
+                    ),
+                    Text.rich(TextSpan(
                         text: 'Today\n',
                         style: Theme.of(context).textTheme.titleSmall,
                         children: [
                           TextSpan(
-                            text: '${controller.user.energyUsed2day}kWh',
-                            style: Theme.of(context).textTheme.displayLarge!.copyWith(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black)
-                          )
-                        ]
-                      )
-                    )
+                              text: '${controller.user.energyUsed2day}kWh',
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .displayLarge!
+                                  .copyWith(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black))
+                        ]))
                   ],
                 ),
                 Row(
                   children: [
-                    const Icon(Icons.calendar_month_outlined, color: Colors.purple,),
+                    const Icon(
+                      Icons.calendar_month_outlined,
+                      color: Colors.purple,
+                    ),
                     Text.rich(
                       TextSpan(
                         text: 'This Month\n',
@@ -66,13 +78,16 @@ class EnergyUsageView extends GetView<HomeController> {
                         children: [
                           TextSpan(
                             text: '${controller.user.energyUsedInMonth}kWh',
-                            style: Theme.of(context).textTheme.displayLarge!.copyWith(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black)
-                          )
-                        ]
-                      )
-                    )
+                            style: Theme.of(context)
+                                .textTheme
+                                .displayLarge!
+                                .copyWith(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black),
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 )
               ],

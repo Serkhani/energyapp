@@ -9,7 +9,8 @@ class HomeController extends GetxController {
         name: 'Jude Boachie',
         img: 'assets/profile.png',
         energyUsed2day: 26.8,
-        energyUsedInMonth: 325.37);
+        energyUsedInMonth: 325.37,
+        lastRecharge: 2);
     super.onInit();
   }
 
@@ -22,5 +23,5 @@ class HomeController extends GetxController {
   void onClose() {
     super.onClose();
   }
-
+  void topUp(){}
 }

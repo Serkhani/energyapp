@@ -1,4 +1,5 @@
 import 'package:energy/app/modules/home/views/energyusage_view.dart';
+import 'package:energy/app/modules/home/views/last_recharge_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -32,7 +33,8 @@ class HomeView extends GetView<HomeController> {
             Padding(
               padding: EdgeInsets.symmetric(vertical: 40.0),
               child: EnergyUsageView(),
-            )
+            ),
+            LastRechargeView()
           ],
         )
       ),

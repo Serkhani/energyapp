@@ -1,11 +1,15 @@
+import 'package:energy/app/data/user.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController {
-  //TODO: Implement HomeController
-
-  final count = 0.obs;
+  late User user;
   @override
   void onInit() {
+    user = const User(
+        name: 'Jude Boachie',
+        img: 'assets/profile.png',
+        energyUsed2day: 26.8,
+        energyUsedInMonth: 325.37);
     super.onInit();
   }
 
@@ -19,5 +23,4 @@ class HomeController extends GetxController {
     super.onClose();
   }
 
-  void increment() => count.value++;
 }

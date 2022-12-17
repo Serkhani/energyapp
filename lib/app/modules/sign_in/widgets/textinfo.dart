@@ -7,20 +7,26 @@ class TextInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(text),
-        TextField(
-          controller: controller,
-          decoration: InputDecoration(
-            fillColor: Colors.indigo.withOpacity(0.4),
-            filled: true,
-            border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16.0),
-                borderSide: BorderSide.none),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(text,
+          style: Theme.of(context).textTheme.titleSmall,
           ),
-        ),
-      ],
+          TextField(
+            controller: controller,
+            decoration: InputDecoration(
+              fillColor: Colors.indigo.withOpacity(0.4),
+              filled: true,
+              border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(16.0),
+                  borderSide: BorderSide.none),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

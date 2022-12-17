@@ -1,3 +1,4 @@
+import 'package:energy/app/modules/sign_in/views/signin_info_view.dart';
 import 'package:energy/app/modules/sign_in/views/signin_section_view.dart';
 import 'package:flutter/material.dart';
 
@@ -11,8 +12,10 @@ class SignInView extends GetView<SignInController> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
+        alignment: Alignment.bottomCenter,
         children: const [
-          SignInSectionView()
+          SignInSectionView(),
+          SigninInfoView(),
         ],
       ),
     );

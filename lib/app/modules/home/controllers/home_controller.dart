@@ -35,4 +35,12 @@ class HomeController extends GetxController {
     print('topup');
     Get.toNamed(Routes.TOP_UP);
   }
+
+  void confirm() {
+    print('confirm');
+  }
+
+  void cancel() {
+    print('cancel');
+  }
 }

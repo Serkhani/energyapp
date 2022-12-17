@@ -1,3 +1,4 @@
+import 'package:energy/app/modules/TopUp/views/buttons_view.dart';
 import 'package:energy/app/modules/TopUp/views/exchange_rate_view.dart';
 import 'package:energy/app/modules/TopUp/views/transaction_card_view.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,8 @@ class TopUpView extends GetView<TopUpController> {
               padding: EdgeInsets.all(8.0),
               child: ExchangeRateView(),
             ),
-            const TransactionCardView()
+            const TransactionCardView(),
+            const ButtonsView()
           ],
         ),
       )

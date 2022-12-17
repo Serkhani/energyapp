@@ -9,7 +9,7 @@ class ExchangeRateView extends GetView<TopUpController> {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
-      height: 50.0,
+      height: 40.0,
       decoration: BoxDecoration(
         color: const Color.fromARGB(255, 205, 205, 194),
         borderRadius: BorderRadius.circular(8.0),

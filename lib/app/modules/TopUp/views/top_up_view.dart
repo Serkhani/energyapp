@@ -22,8 +22,8 @@ class TopUpView extends GetView<TopUpController> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 16.0, bottom: 16.0),
-              child: Text('Top-up', style: Theme.of(context).textTheme.titleLarge,),
+              padding: const EdgeInsets.only(left: 16.0, bottom: 8.0),
+              child: Text('Top-up', style: Theme.of(context).textTheme.titleLarge!.copyWith(fontSize: 24.0),),
             ),
             const Padding(
               padding: EdgeInsets.all(8.0),

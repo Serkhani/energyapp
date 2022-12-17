@@ -44,7 +44,7 @@ class LastRechargeView extends GetView<HomeController> {
                     borderRadius: BorderRadius.circular(35.0),
                     gradient: LinearGradient(
                       colors: [
-                        Colors.white,
+                        Colors.lightBlueAccent,
                         Theme.of(context).scaffoldBackgroundColor
                       ]
                       ),

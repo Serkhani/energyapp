@@ -32,6 +32,7 @@ class AppTheme {
         overflow: TextOverflow.ellipsis,
         color: Colors.white,
         fontSize: 25.0,
+        fontWeight: FontWeight.bold
       )
     ),
     iconTheme: const IconThemeData(

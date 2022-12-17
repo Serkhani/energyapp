@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/TopUp/bindings/top_up_binding.dart';
+import '../modules/TopUp/views/top_up_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/sign_in/bindings/sign_in_binding.dart';
@@ -22,6 +24,11 @@ class AppPages {
       name: _Paths.SIGN_IN,
       page: () => const SignInView(),
       binding: SignInBinding(),
+    ),
+    GetPage(
+      name: _Paths.TOP_UP,
+      page: () => const TopUpView(),
+      binding: TopUpBinding(),
     ),
   ];
 }

@@ -1,4 +1,5 @@
 import 'package:energy/app/modules/TopUp/views/exchange_rate_view.dart';
+import 'package:energy/app/modules/TopUp/views/transaction_card_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -15,18 +16,21 @@ class TopUpView extends GetView<TopUpController> {
         elevation: 0.0,
         leading: const BackButton(color: Colors.white,),
             ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(left: 16.0, bottom: 16.0),
-            child: Text('Top-up', style: Theme.of(context).textTheme.titleLarge,),
-          ),
-          const Padding(
-            padding: EdgeInsets.all(8.0),
-            child: ExchangeRateView(),
-          )
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 16.0, bottom: 16.0),
+              child: Text('Top-up', style: Theme.of(context).textTheme.titleLarge,),
+            ),
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: ExchangeRateView(),
+            ),
+            const TransactionCardView()
+          ],
+        ),
       )
     );
   }

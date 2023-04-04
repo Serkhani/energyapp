@@ -10,7 +10,7 @@ Of course, you can customize this introduction to fit your specific project and 
 ![SignIn](https://github.com/Serkhani/energyapp/blob/c3f29496914dde63c47105ac138f9e32a5651a59/signIn.PNG)
 #### TopUp
 ![TopUp](https://github.com/Serkhani/energyapp/blob/c3f29496914dde63c47105ac138f9e32a5651a59/topUp.PNG)
-https://user-images.githubusercontent.com/66341820/229789557-46785bcb-bf74-44c0-9ae3-1f6b206f8a87.mp4
+![Video](https://user-images.githubusercontent.com/66341820/229789557-46785bcb-bf74-44c0-9ae3-1f6b206f8a87.mp4)
 ## Motivation 🤔
 It seems that [Jude Boachie](https://github.com/boachiejude) took notice of the UI and was intrigued by it(I think🤔), which led to him requesting that I give it a try. It could be that he saw potential in the UI or simply wanted to see how it works. Regardless, the interest in the UI was a good sign that building the app was worth exploring.
 ## Disclaimers 🚨
